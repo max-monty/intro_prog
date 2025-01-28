@@ -2,6 +2,8 @@
 
 float x = 0;
 float speed = 4;
+float radius = 24;
+
 void setup() {
   size(640, 360);
 }
@@ -11,11 +13,11 @@ void draw() {
   noStroke();
   fill(255);
   
-  circle(x, height/2, 48);
+  circle(x, height/2, radius*2);
   
-  x = x + speed;
+  x += speed;
   
-  if (x+24 > width) {
+  if (x+radius > width) {
     speed = -4;
   } 
 

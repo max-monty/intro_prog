@@ -1,1 +1,7 @@
 .DS_Store
+examples/
+flow/
+libraries/
+modes/
+templates/
+tools/
